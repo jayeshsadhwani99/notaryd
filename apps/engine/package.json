@@ -1,0 +1,41 @@
+{
+  "name": "@notaryd/engine",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "start:worker": "node dist/worker.js",
+    "test": "tsx --test test/*.test.ts",
+    "db:migrate": "tsx src/db/migrate.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@sentry/nestjs": "^10.17.0",
+    "@supabase/supabase-js": "^2.58.0",
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.61.0",
+    "cookie-parser": "^1.4.7",
+    "e2b": "^2.5.0",
+    "express": "^5.1.0",
+    "ioredis": "^5.8.1",
+    "playwright": "1.55.1",
+    "postgres": "^3.4.7",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.10",
+    "@nestjs/schematics": "^11.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.8",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,1 @@
+export const themeBootScript = `try{var m=localStorage.getItem('notaryd-theme')||'system';var d=m==='dark'||(m==='system'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d)}catch(e){}`;

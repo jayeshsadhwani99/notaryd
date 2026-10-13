@@ -1,0 +1,15 @@
+node_modules
+dist
+.next
+.data
+.env
+.env.local
+.env.*.local
+playwright-report
+test-results
+*.log
+coverage
+.DS_Store
+apps/engine/dist
+apps/web/.next
+apps/web/out

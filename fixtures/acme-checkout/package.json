@@ -1,0 +1,17 @@
+{
+  "name": "acme-checkout",
+  "private": true,
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "next-auth": "^4.24.11",
+    "@prisma/client": "^6.0.0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "seed": "tsx prisma/seed.ts"
+  }
+}

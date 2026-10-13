@@ -1,0 +1,12 @@
+{
+  "name": "notaryd",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "test": "pnpm --filter @notaryd/engine test",
+    "db:migrate": "pnpm --filter @notaryd/engine db:migrate",
+    "docker:up": "docker compose up -d"
+  }
+}
